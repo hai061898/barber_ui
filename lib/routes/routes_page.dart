@@ -1,4 +1,7 @@
-// import 'package:get/get.dart';
+import 'package:get/get.dart';
+
+import 'package:barber/pages/initial/bindings/initial_binding.dart';
+import 'package:barber/pages/initial/screens/initial_screen.dart';
 
 abstract class RoutesName {
   static const INITIAL = '/';
@@ -17,19 +20,12 @@ abstract class RoutesName {
 
 class RoutesPage {
   static const INITIAL = RoutesName.INITIAL;
-   routes() => [
-    // GetPage(
-    //   name: RoutesName.INITIAL,
-    //   page: ()=>InitialView(),
-    //   binding: InitialBinding(),
-    // ),
+   static final routes = [
+    GetPage(
+      name: RoutesName.INITIAL,
+      page: ()=>InitialPage(),
+      binding: InitialBinding(),
+    ),
   ];
 }
 
-outes() => [
-    // GetPage(
-    //   name: RoutesName.INITIAL,
-    //   page: ()=>InitialView(),
-    //   binding: InitialBinding(),
-    // ),
-];
