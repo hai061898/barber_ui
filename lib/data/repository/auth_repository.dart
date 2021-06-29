@@ -3,7 +3,7 @@ import 'package:barber/data/models/user_model.dart';
 import 'package:barber/data/provider/auth_provide.dart';
 
 class AuthRepository {
-  final AuthPrivider apiClient = AuthPrivider();
+  final AuthProvider apiClient = AuthProvider();
   Future<Auth> login(String username, String password) async {
     Map json = await apiClient.login(username, password);
     return Auth.fromJson(json['user']);

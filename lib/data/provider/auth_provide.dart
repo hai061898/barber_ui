@@ -2,7 +2,7 @@ import 'package:barber/data/api/api_link.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AuthPrivider extends GetConnect {
+class AuthProvider extends GetConnect {
   Future<Map<String, dynamic>> login(String username, String password) async {
     var response = await post(
         "$baseurl/login", {"username": username, "password": password});
