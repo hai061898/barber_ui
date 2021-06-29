@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-import 'components/background.dart';
+import '../../../widgets/background.dart';
 
 class WelcomeScreen extends GetView<WelcomeController> {
   @override
