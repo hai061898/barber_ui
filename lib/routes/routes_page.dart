@@ -1,3 +1,11 @@
+import 'package:barber/pages/home/bindings/home_bindings.dart';
+import 'package:barber/pages/home/screens/home_screen.dart';
+import 'package:barber/pages/login/bindings/login_binding.dart';
+import 'package:barber/pages/login/screens/login_screen.dart';
+import 'package:barber/pages/signup/bindings/signup_bindings.dart';
+import 'package:barber/pages/signup/screens/signup_screen.dart';
+import 'package:barber/pages/welcome/binding/welcome_binding.dart';
+import 'package:barber/pages/welcome/screens/welcome_screen.dart';
 import 'package:get/get.dart';
 
 import 'package:barber/pages/initial/bindings/initial_binding.dart';
@@ -25,6 +33,26 @@ class RoutesPage {
       name: RoutesName.INITIAL,
       page: ()=>InitialPage(),
       binding: InitialBinding(),
+    ),
+    GetPage(
+      name: RoutesName.LOGIN,
+      page: () => LoginScreen(),
+      binding: Loginbindings(),
+    ),
+    GetPage(
+      name: RoutesName.WELCOME,
+      page: () => WelcomeScreen(),
+      binding: WelcomeBinding(),
+    ),
+    GetPage(
+      name: RoutesName.SIGNUP,
+      page: () => SignUpScreen(),
+      binding: SignBinding(),
+    ),
+    GetPage(
+      name: RoutesName.HOME,
+      page: () => HomeScreen(),
+      binding: HomeBinding(),
     ),
   ];
 }

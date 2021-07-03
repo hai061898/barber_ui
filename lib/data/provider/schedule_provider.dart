@@ -17,7 +17,7 @@ class ScheduleProvider extends GetConnect {
 
     if (response.hasError) {
       box.erase();
-      Get.offAllNamed(RoutesPage.WELCOME);
+      Get.offAllNamed(RoutesName.WELCOME);
     }
     if (response.statusCode == 200) {
       return response.body;

@@ -22,13 +22,13 @@ class SignupController extends GetxController {
       });
       // ignore: unnecessary_null_comparison
       if (user != null) {
-        Get.offAllNamed(RoutesPage.LOGIN);
+        Get.offAllNamed(RoutesName.LOGIN);
       }
       loading.value = false;
     }
   }
 
   void toLogin() {
-    Get.offAllNamed(RoutesPage.LOGIN);
+    Get.offAllNamed(RoutesName.LOGIN);
   }
 }

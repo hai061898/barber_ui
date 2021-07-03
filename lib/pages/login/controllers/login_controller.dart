@@ -24,7 +24,7 @@ class LoginController extends GetxController {
             // ignore: unnecessary_null_comparison
             if(auth != null){
               box.write('auth', auth);
-              Get.offAllNamed(RoutesPage.HOME);
+              Get.offAllNamed(RoutesName.HOME);
             }
             loading.value =false;
           }).catchError((err){
@@ -33,6 +33,6 @@ class LoginController extends GetxController {
     }
   }
   void toRegister(){
-    Get.offAndToNamed(RoutesPage.SIGNUP);
+    Get.offAndToNamed(RoutesName.SIGNUP);
   }
 }

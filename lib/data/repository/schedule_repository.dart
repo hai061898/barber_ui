@@ -1,5 +1,11 @@
+import 'package:barber/data/models/employee_model.dart';
+import 'package:barber/data/models/schedule_model.dart';
+import 'package:barber/data/models/service_model.dart';
+import 'package:barber/data/provider/schedule_provider.dart';
+import 'package:get/get.dart';
+
 class SchedulesRepository{
-   final ScheduleProvide apiClient = Get.find<ScheduleApiClient>();
+   final ScheduleProvider apiClient = Get.find<ScheduleProvider>();
   
   Future<List<Schedule>> getAll() async{
     List<Schedule> list = <Schedule>[];
