@@ -107,7 +107,7 @@ class ScheduleScreen extends GetView<ScheduleController> {
                 showCursor: true,
                 readOnly: true,
                 decoration: InputDecoration(
-                  labelText: 'Escolha um Funcionário (Opcional)',
+                  labelText: 'List Employee',
                   icon: Icon(Icons.account_circle),
                 ),
                 onTap: controller.openEmployeePage,
