@@ -22,6 +22,18 @@ class HomeScreen extends GetView<HomeController> {
                 child: Page1(),
               ),
             ),
+          //    Obx(
+          //   () => Visibility(
+          //     visible: controller.selectedIndex.value == 1,
+          //     child: Page2(),
+          //   ),
+          // ),
+          // Obx(
+          //   () => Visibility(
+          //     visible: controller.selectedIndex.value == 2,
+          //     child: Page3(),
+          //   ),
+          // ),
           ],
         ),
         bottomNavigationBar: BottomNavBar(),
